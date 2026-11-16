@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para Aza ✦</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: grid;
+  place-items: center; padding: 22px;
+  background: radial-gradient(ellipse at top,#29213b,#090a12 70%);
+  color: #f5edf8; text-align: center;
+  font-family: Georgia,serif;
+}
+.card {
+  width: 100%; max-width: 480px; padding: 45px 25px;
+  background: #171624ed; border: 1px solid #776187;
+  box-shadow: 0 0 45px #0008;
+}
+.stars { color: #d9c6ed; letter-spacing: 8px; }
+.small { color: #c6acd9; letter-spacing: 4px; font: 10px Arial; }
+h1 { font-size: 34px; font-weight: normal; line-height: 1.35; }
+p { line-height: 1.9; }
+.sub { color: #c9bdce; }
+button {
+  margin-top: 25px; padding: 14px 27px;
+  color: #f5edf8; background: transparent;
+  border: 1px solid #bda3d0; border-radius: 30px;
+  font-size: 15px;
+}
+button:active { background: #493853; }
+.line { width: 45px; height: 1px; background: #bda3d0; margin: 25px auto; }
+.message { white-space: pre-line; font-size: 17px; color: #e8dfeb; }
+.signature { color: #cbb3dc; font-style: italic; margin-top: 28px; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="stars">✦ · ✧ · ✦</div>
+  <section id="inicio">
+    <p class="small">UNA CARTA PARA TI</p>
+    <h1>Tengo algo que decirte, Aza...</h1>
+    <p class="sub">Hay cosas que a veces cuesta decir en voz alta.</p>
+    <button onclick="mostrarCarta()">Descúbrelo ♡</button>
+  </section>
+  <section id="carta" hidden>
+    <p class="small">CON TODO MI CORAZÓN:((</p>
+    <h1>Perdóname, Aza.</h1>
+    <div class="line"></div>
+    <p class="message">Sé que mi comportamiento te lastima, y de verdad lo siento.
+
+No quiero que mis errores pesen más que todo lo bonito que siento por ti.
+
+No te pido que olvides lo que pasó; quiero demostrarte, con hechos, que puedo hacerlo mejor.
+
+Te amo, y también quiero aprender a cuidarte como mereces, y entiendo si no me quieres hablar por unos días mas.</p>
+    <p class="signature">Con todo mi amor. ✧</p>
+  </section>
+  <div class="stars">✧</div>
+</main>
+<script>
+function mostrarCarta() {
+  document.getElementById("inicio").hidden = true;
+  document.getElementById("carta").hidden = false;
+}
+</script>
+</body>
+</html>
